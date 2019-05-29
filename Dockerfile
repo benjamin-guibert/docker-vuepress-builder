@@ -10,6 +10,4 @@ WORKDIR /usr/src/app
 
 RUN npm install -g vuepress
 
-COPY . .
-
-ENTRYPOINT [ "vuepress", "build" ]
+ENTRYPOINT [ "/bin/sh", "-c", "vuepress build . 2>&1 | tee /etc/log/vuepress-builder/build.log" ]
