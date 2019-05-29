@@ -10,4 +10,9 @@ WORKDIR /usr/src/app
 
 RUN npm install -g vuepress
 
+# Create user deploy
+RUN adduser --quiet --gecos "" --disabled-password deploy && usermod -aG sudo deploy
+
+USER deploy
+
 ENTRYPOINT [ "/bin/sh", "-c", "vuepress build . 2>&1 | tee /etc/log/vuepress-builder/build.log" ]

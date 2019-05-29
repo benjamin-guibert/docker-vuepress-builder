@@ -1,0 +1,11 @@
+Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/vuepress/lib/app/.temp'
+    at Object.fs.mkdirSync (fs.js:885:18)
+    at Object.mkdirsSync (/usr/local/lib/node_modules/vuepress/node_modules/fs-extra/lib/mkdirs/mkdirs-sync.js:31:9)
+    at Object.<anonymous> (/usr/local/lib/node_modules/vuepress/lib/prepare/util.js:7:4)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)
+    at Function.Module._load (module.js:498:3)
+    at Module.require (module.js:597:17)
+    at require (internal/module.js:11:18)
