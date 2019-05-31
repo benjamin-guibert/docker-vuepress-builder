@@ -16,4 +16,4 @@ RUN npm install -g vuepress
 
 # Build the project
 
-ENTRYPOINT [ "/bin/sh", "-c", "vuepress build -d /var/www . 2>&1 | tee /etc/log/vuepress-builder/build.log" ]
+ENTRYPOINT [ "/bin/sh", "-c", "vuepress build -d /var/build/deploy . 2>&1 | tee /var/build/build.log" ]
