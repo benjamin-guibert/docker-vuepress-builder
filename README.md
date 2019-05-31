@@ -31,6 +31,7 @@ docker run bguibert/vuepress-builder:latest
 #### Volumes
 
 - `/usr/src/app`: Source files location.
+- `/var/www`: Destination files location.
 - `/etc/log/vuepress-builder` : Logs location (a `build.log` file is generated).
 
 ## Release History
