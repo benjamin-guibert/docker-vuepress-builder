@@ -6,10 +6,6 @@ LABEL version="0.1.0"
 
 WORKDIR /usr/src/app
 
-# Create needed directories
-
-RUN mkdir -p /etc/log/vuepress-builder && mkdir -p /var/www
-
 # Install VuePress
 
 RUN npm install -g vuepress
