@@ -1,6 +1,6 @@
 # VuePress Builder
 
-Docker image for building a VuePress project.
+> Docker image for building a VuePress project.
 
 ## Table of Contents
 
